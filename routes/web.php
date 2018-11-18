@@ -14,4 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::match(['get','post'],'/admin/index/{name}');
 Route::get('/translate', 'TranslateController@index');
+Route::get('/crawling', 'CrawlingController@index');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

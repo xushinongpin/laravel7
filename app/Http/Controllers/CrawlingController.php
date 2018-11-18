@@ -3,27 +3,31 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Stichoza\GoogleTranslate\TranslateClient;
+use GuzzleHttp\Psr7;
+use GuzzleHttp\Client;
 
-class TranslateController extends Controller
+class CrawlingController extends Controller
 {
     /**
      * Display a listing of the resource.
-     * github地址：  https://github.com/Stichoza/google-translate-php
+     * https://github.com/guzzle/guzzle
+     * http://docs.guzzlephp.org/en/stable/request-options.html#ssl-key
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        $array = array(
-            'rule-name' => 'custom-message',
-        );
-        $tr = new TranslateClient('en', 'zh-CN');
-        $tr->setUrlBase('http://translate.google.cn/translate_a/single'); // Set Google Translate URL base (This is not necessary, only for some countries)
-//        echo $tr->translate('Hello World!');
-        foreach ($array as &$v){
-            $v = $tr->translate($v);
-        }
-        dump($array);
+        $client = new Client();
+
+//        $res = $client->request('GET','http://discuz.lvtian.ren');
+//        echo $res->getStatusCode();
+//        echo $res->getHeaderLine('content-type');
+//        echo $res->getBody();
+
+        $request = new Psr7\Request('GET','https://www.psc.app');
+        $promise = $client->sendAsync($request)->then(function ($response){
+            echo $response->getBody();
+        });
+        $promise->wait();
     }
 
     /**

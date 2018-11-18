@@ -1,29 +1,20 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-use Stichoza\GoogleTranslate\TranslateClient;
+use App\Http\Controllers\Controller;
 
-class TranslateController extends Controller
+class IndexController extends Controller
 {
     /**
      * Display a listing of the resource.
-     * github地址：  https://github.com/Stichoza/google-translate-php
+     *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        $array = array(
-            'rule-name' => 'custom-message',
-        );
-        $tr = new TranslateClient('en', 'zh-CN');
-        $tr->setUrlBase('http://translate.google.cn/translate_a/single'); // Set Google Translate URL base (This is not necessary, only for some countries)
-//        echo $tr->translate('Hello World!');
-        foreach ($array as &$v){
-            $v = $tr->translate($v);
-        }
-        dump($array);
+        dd(1);
     }
 
     /**
