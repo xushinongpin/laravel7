@@ -19,7 +19,7 @@ class GoogleauthController extends Controller
         $companyName = 'ilvtian';
         $conpanyEmail = 'zlc@lvtian.vip';
         $qrCodeStr = $google2Fa->getQRCodeUrl($companyName,$conpanyEmail,$google_key);
-        dd($qrCodeStr);
+        return view('auth.google',['qrCodeStr'=>$qrCodeStr]);
         //
     }
 
