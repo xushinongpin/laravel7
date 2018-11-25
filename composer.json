@@ -10,6 +10,7 @@
         "guzzlehttp/guzzle": "^6.3",
         "laravel/framework": "5.7.*",
         "laravel/tinker": "^1.0",
+        "pragmarx/google2fa": "^4.0",
         "stichoza/google-translate-php": "^3.2"
     },
     "require-dev": {
