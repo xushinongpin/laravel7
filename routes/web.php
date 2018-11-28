@@ -20,3 +20,10 @@ Route::get('/crawling', 'CrawlingController@index');
 Route::get('/google2fa','GoogleauthController@index');
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/authenticate', 'LoginController@authenticate');
+Route::get('profile', function () {
+    // Only authenticated users may enter...
+})->middleware('auth.basic');
+Route::get('api/user', function () {
+    // Only authenticated users may enter...
+})->middleware('auth.basic.once');

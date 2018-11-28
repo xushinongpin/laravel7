@@ -3,7 +3,7 @@
     username 用户名
     truename  真实姓名 【必须与银行卡一致】
     password   加密后的密码
-    remembertoken  忘记密码验证字段
+    remember_token  记住我令牌
     created_at   注册时间
     updated_at   登陆时间
     status 1前台 2后台 3前台停用 4后台停用
