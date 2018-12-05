@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8604a2de5bb62ab6882d7fe093b7482e",
+    "content-hash": "cf8955206fb8677eb476d72176785327",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -51,6 +51,60 @@
             "description": "BaconQrCode is a QR code generator for PHP.",
             "homepage": "https://github.com/Bacon/BaconQrCode",
             "time": "2017-10-17T09:59:25+00:00"
+        },
+        {
+            "name": "codingyu/ueditor",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/codingyu/UEditor.git",
+                "reference": "e8cf5e07571117df3ae9fe1407bdbe1f24e51dbc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/codingyu/UEditor/zipball/e8cf5e07571117df3ae9fe1407bdbe1f24e51dbc",
+                "reference": "e8cf5e07571117df3ae9fe1407bdbe1f24e51dbc",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "overtrue/laravel-ueditor": "~1.0",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Codingyu\\Ueditor\\UeditorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Codingyu\\Ueditor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "codingyu",
+                    "email": "everceyu@gmail.com"
+                }
+            ],
+            "description": "UEditor extension for laravel-admin",
+            "homepage": "https://github.com/codingyu/UEditor",
+            "keywords": [
+                "extension",
+                "laravel-admin",
+                "ueditor"
+            ],
+            "time": "2018-10-28T04:15:19+00:00"
         },
         {
             "name": "defuse/php-encryption",
@@ -114,6 +168,59 @@
                 "symmetric key cryptography"
             ],
             "time": "2018-07-24T23:27:56+00:00"
+        },
+        {
+            "name": "dianwoung/large-file-upload",
+            "version": "0.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/large-file-upload.git",
+                "reference": "028ccc4cbeb610a4ea0023653b0f78e01445ce0a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/large-file-upload/zipball/028ccc4cbeb610a4ea0023653b0f78e01445ce0a",
+                "reference": "028ccc4cbeb610a4ea0023653b0f78e01445ce0a",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "peinhu/aetherupload-laravel": "~1.0",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\LargeFileUpload\\LargeFileUploadServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\LargeFileUpload\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dian Wang",
+                    "email": "dian126@foxmail.com"
+                }
+            ],
+            "description": "An extension of laravel-admin for uploading large files",
+            "homepage": "https://github.com/Dianwoung/large-file-upload",
+            "keywords": [
+                "extension",
+                "laravel-admin"
+            ],
+            "time": "2018-10-30T02:21:48+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1153,6 +1260,462 @@
             "time": "2018-03-21T22:21:57+00:00"
         },
         {
+            "name": "jxlwqq/code-mirror",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/code-mirror.git",
+                "reference": "7622d7ba1b73a0fc2c27a477f7f75c5a5e8ba8de"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/code-mirror/zipball/7622d7ba1b73a0fc2c27a477f7f75c5a5e8ba8de",
+                "reference": "7622d7ba1b73a0fc2c27a477f7f75c5a5e8ba8de",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Jxlwqq\\CodeMirror\\CodeMirrorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jxlwqq\\CodeMirror\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "jxlwqq",
+                    "email": "jxlwqq@gmail.com"
+                }
+            ],
+            "description": "code editor extension for laravel-admin",
+            "homepage": "https://github.com/jxlwqq/code-mirror",
+            "keywords": [
+                "extension",
+                "laravel-admin"
+            ],
+            "time": "2018-09-11T17:18:52+00:00"
+        },
+        {
+            "name": "jxlwqq/composer-viewer",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/composer-viewer.git",
+                "reference": "e6d0075c196e7edd96c25f64c26ea2a9edf1fab9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/composer-viewer/zipball/e6d0075c196e7edd96c25f64c26ea2a9edf1fab9",
+                "reference": "e6d0075c196e7edd96c25f64c26ea2a9edf1fab9",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Jxlwqq\\ComposerViewer\\ComposerViewerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jxlwqq\\ComposerViewer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "jxlwqq",
+                    "email": "jxlwqq@gmail.com"
+                }
+            ],
+            "description": "Composer Viewer for Laravel-admin",
+            "homepage": "https://github.com/jxlwqq/composer-viewer",
+            "keywords": [
+                "extension",
+                "laravel-admin"
+            ],
+            "time": "2018-10-23T14:45:10+00:00"
+        },
+        {
+            "name": "jxlwqq/env-manager",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jxlwqq/env-manager.git",
+                "reference": "faeaf2f1d110dbfd88e715d71f289b128ceebda0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jxlwqq/env-manager/zipball/faeaf2f1d110dbfd88e715d71f289b128ceebda0",
+                "reference": "faeaf2f1d110dbfd88e715d71f289b128ceebda0",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Jxlwqq\\EnvManager\\EnvManagerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jxlwqq\\EnvManager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "jxlwqq",
+                    "email": "jxlwqq@gmail.com"
+                }
+            ],
+            "description": "Env Manager for Laravel-admin",
+            "homepage": "https://github.com/jxlwqq/env-manager",
+            "keywords": [
+                "extension",
+                "laravel-admin"
+            ],
+            "time": "2018-10-26T10:29:14+00:00"
+        },
+        {
+            "name": "jxlwqq/id-validator",
+            "version": "1.4.19",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jxlwqq/id-validator.git",
+                "reference": "a0d449aff00c8ca0cf6d5be5608477cd630191f9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jxlwqq/id-validator/zipball/a0d449aff00c8ca0cf6d5be5608477cd630191f9",
+                "reference": "a0d449aff00c8ca0cf6d5be5608477cd630191f9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jxlwqq\\IdValidator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "jxlwqq",
+                    "email": "jxlwqq@gmail.com",
+                    "homepage": "https://jxlwqq.github.io"
+                }
+            ],
+            "description": "Chinese Mainland Personal ID Card Validation",
+            "time": "2018-11-12T03:42:30+00:00"
+        },
+        {
+            "name": "jxlwqq/json-editor",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/json-editor.git",
+                "reference": "95b746b4bf457f88637b395012b1a484724c5501"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/json-editor/zipball/95b746b4bf457f88637b395012b1a484724c5501",
+                "reference": "95b746b4bf457f88637b395012b1a484724c5501",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Jxlwqq\\JsonEditor\\JsonEditorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jxlwqq\\JsonEditor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "jxlwqq",
+                    "email": "jxlwqq@gmail.com"
+                }
+            ],
+            "description": "JSON Editor for Laravel-admin",
+            "homepage": "https://github.com/jxlwqq/json-editor",
+            "keywords": [
+                "extension",
+                "laravel-admin"
+            ],
+            "time": "2018-10-20T15:17:00+00:00"
+        },
+        {
+            "name": "jxlwqq/material-ui",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/material-ui.git",
+                "reference": "d91d817cfd661094fc2ce718223f9d32ffb59449"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/material-ui/zipball/d91d817cfd661094fc2ce718223f9d32ffb59449",
+                "reference": "d91d817cfd661094fc2ce718223f9d32ffb59449",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": ">=1.6.1",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Jxlwqq\\MaterialUI\\MaterialUIServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jxlwqq\\MaterialUI\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "jxlwqq",
+                    "email": "jxlwqq@gmail.com"
+                }
+            ],
+            "description": "material ui for laravel-admin",
+            "homepage": "https://github.com/jxlwqq/material-ui",
+            "keywords": [
+                "extension",
+                "laravel-admin"
+            ],
+            "time": "2018-10-29T11:02:41+00:00"
+        },
+        {
+            "name": "jxlwqq/quill",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jxlwqq/quill.git",
+                "reference": "a9609fd9108555bf3b821ce21c7f8b2f62733b2c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jxlwqq/quill/zipball/a9609fd9108555bf3b821ce21c7f8b2f62733b2c",
+                "reference": "a9609fd9108555bf3b821ce21c7f8b2f62733b2c",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Jxlwqq\\Quill\\QuillServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jxlwqq\\Quill\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "jxlwqq",
+                    "email": "jxlwqq@gmail.com"
+                }
+            ],
+            "description": "quill editor for laravel-admin",
+            "homepage": "https://github.com/jxlwqq/quill",
+            "keywords": [
+                "extension",
+                "laravel-admin"
+            ],
+            "time": "2018-11-21T05:41:26+00:00"
+        },
+        {
+            "name": "jxlwqq/simditor",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jxlwqq/simditor.git",
+                "reference": "f7f50c6d976db030df50737c4bb864199a159b3d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jxlwqq/simditor/zipball/f7f50c6d976db030df50737c4bb864199a159b3d",
+                "reference": "f7f50c6d976db030df50737c4bb864199a159b3d",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Jxlwqq\\Simditor\\SimditorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jxlwqq\\Simditor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "jxlwqq",
+                    "email": "jxlwqq@gmail.com"
+                }
+            ],
+            "description": "Simditor for Laravel-admin",
+            "homepage": "https://github.com/jxlwqq/simditor",
+            "keywords": [
+                "extension",
+                "laravel-admin"
+            ],
+            "time": "2018-09-22T08:06:36+00:00"
+        },
+        {
+            "name": "jxlwqq/star-rating",
+            "version": "0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/star-rating.git",
+                "reference": "169899729833035587a2a599366bde293179b53e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/star-rating/zipball/169899729833035587a2a599366bde293179b53e",
+                "reference": "169899729833035587a2a599366bde293179b53e",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Jxlwqq\\StarRating\\StarRatingServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jxlwqq\\StarRating\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "jxlwqq",
+                    "email": "jxlwqq@gmail.com"
+                }
+            ],
+            "description": "Star Rating extension for laravel-admin.",
+            "homepage": "https://github.com/jxlwqq/star-rating",
+            "keywords": [
+                "extension",
+                "laravel-admin"
+            ],
+            "time": "2018-09-12T10:20:07+00:00"
+        },
+        {
             "name": "laravel-admin-ext/api-tester",
             "version": "v1.0.2",
             "source": {
@@ -1263,6 +1826,227 @@
             "time": "2018-04-24T11:45:17+00:00"
         },
         {
+            "name": "laravel-admin-ext/chartjs",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/chartjs.git",
+                "reference": "3a12f9907c9d4ba59cdd1c9033e67325a337469f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/chartjs/zipball/3a12f9907c9d4ba59cdd1c9033e67325a337469f",
+                "reference": "3a12f9907c9d4ba59cdd1c9033e67325a337469f",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "*",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\Chartjs\\ChartjsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\Chartjs\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "song",
+                    "email": "zosong@126.com"
+                }
+            ],
+            "description": "Use Chartjs in laravel-admin",
+            "homepage": "https://github.com/laravel-admin-ext/chartjs",
+            "keywords": [
+                "chartjs",
+                "extension",
+                "laravel-admin"
+            ],
+            "time": "2018-09-16T17:28:26+00:00"
+        },
+        {
+            "name": "laravel-admin-ext/china-distpicker",
+            "version": "v1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/china-distpicker.git",
+                "reference": "7cb0799b578bf2f023dd91f36acd3038952e86aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/china-distpicker/zipball/7cb0799b578bf2f023dd91f36acd3038952e86aa",
+                "reference": "7cb0799b578bf2f023dd91f36acd3038952e86aa",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\ChinaDistpicker\\ChinaDistpickerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\ChinaDistpicker\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "song",
+                    "email": "zosong@126.com"
+                }
+            ],
+            "description": "Distpicker extension for laravel-admin",
+            "homepage": "https://github.com/laravel-admin-ext/china-distpicker",
+            "keywords": [
+                "distpicker",
+                "extension",
+                "laravel-admin"
+            ],
+            "time": "2018-11-20T03:21:43+00:00"
+        },
+        {
+            "name": "laravel-admin-ext/ckeditor",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/ckeditor.git",
+                "reference": "33b0be1f489f923617417f8135a198d984a6b12f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/ckeditor/zipball/33b0be1f489f923617417f8135a198d984a6b12f",
+                "reference": "33b0be1f489f923617417f8135a198d984a6b12f",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\CKEditor\\CKEditorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\CKEditor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "song",
+                    "email": "zosong@126.com"
+                }
+            ],
+            "description": "Integrate CKEDITOR into laravel-admin",
+            "homepage": "https://github.com/laravel-admin-ext/ckeditor",
+            "keywords": [
+                "CKEditor",
+                "editor",
+                "extension",
+                "laravel-admin"
+            ],
+            "time": "2018-11-03T06:08:00+00:00"
+        },
+        {
+            "name": "laravel-admin-ext/clike-editor",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/clike-editor.git",
+                "reference": "2e7f78ad3458209ade1448f9f59a12c0564af337"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/clike-editor/zipball/2e7f78ad3458209ade1448f9f59a12c0564af337",
+                "reference": "2e7f78ad3458209ade1448f9f59a12c0564af337",
+                "shasum": ""
+            },
+            "require": {
+                "jxlwqq/code-mirror": "*",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\ClikeEditor\\ClikeEditorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\ClikeEditor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Song",
+                    "email": "zosong@126.com"
+                }
+            ],
+            "description": "Several c-lick language editor extensions for laravel-admin based on code-mirror",
+            "homepage": "https://github.com/laravel-admin-ext/clike-editor",
+            "keywords": [
+                "Ceylon",
+                "clang",
+                "code-mirror",
+                "cpp",
+                "editor",
+                "extension",
+                "java",
+                "kotlin",
+                "laravel-admin",
+                "objectivec",
+                "scala"
+            ],
+            "time": "2018-09-12T05:16:03+00:00"
+        },
+        {
             "name": "laravel-admin-ext/config",
             "version": "v1.0.2",
             "source": {
@@ -1317,6 +2101,279 @@
             "time": "2018-10-24T15:57:50+00:00"
         },
         {
+            "name": "laravel-admin-ext/cropper",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/cropper.git",
+                "reference": "2cbc4c02fc76208c649746fd49d6550ec0c01fc5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/cropper/zipball/2cbc4c02fc76208c649746fd49d6550ec0c01fc5",
+                "reference": "2cbc4c02fc76208c649746fd49d6550ec0c01fc5",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\Cropper\\CropperServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\Cropper\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "EVA09",
+                    "email": "940173803@qq.com"
+                }
+            ],
+            "description": "Integrate Cropper into laravel-admin",
+            "homepage": "https://github.com/EVA09/cropper",
+            "keywords": [
+                "cropper",
+                "extension",
+                "image",
+                "laravel-admin"
+            ],
+            "time": "2018-09-30T07:21:30+00:00"
+        },
+        {
+            "name": "laravel-admin-ext/css-editor",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/css-editor.git",
+                "reference": "6ef931e5b161c5735d053f680638a912142478cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/css-editor/zipball/6ef931e5b161c5735d053f680638a912142478cf",
+                "reference": "6ef931e5b161c5735d053f680638a912142478cf",
+                "shasum": ""
+            },
+            "require": {
+                "jxlwqq/code-mirror": "*",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\CssEditor\\CssEditorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\CssEditor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "song",
+                    "email": "zosong@126.com"
+                }
+            ],
+            "description": "CSS editor extension for laravel-admin",
+            "homepage": "https://github.com/laravel-admin-ext/css-editor",
+            "keywords": [
+                "code mirror",
+                "css",
+                "editor",
+                "extension",
+                "laravel-admin",
+                "less",
+                "scss"
+            ],
+            "time": "2018-09-12T05:11:21+00:00"
+        },
+        {
+            "name": "laravel-admin-ext/daterangepicker",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/daterangepicker.git",
+                "reference": "f38de46062203973ecfea1ab4092839eef77e269"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/daterangepicker/zipball/f38de46062203973ecfea1ab4092839eef77e269",
+                "reference": "f38de46062203973ecfea1ab4092839eef77e269",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\DateRangePicker\\DateRangePickerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\DateRangePicker\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "song",
+                    "email": "zosong@126.com"
+                }
+            ],
+            "description": "Integrates daterangepicker into laravel-admin",
+            "homepage": "https://github.com/laravel-admin-ext/daterangepicker",
+            "keywords": [
+                "daterangepicker",
+                "extension",
+                "form",
+                "laravel-admin"
+            ],
+            "time": "2018-09-13T17:50:59+00:00"
+        },
+        {
+            "name": "laravel-admin-ext/file-browser",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/file-browser.git",
+                "reference": "23e8adeec4e4aeec8191839bf71a33d184540e58"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/file-browser/zipball/23e8adeec4e4aeec8191839bf71a33d184540e58",
+                "reference": "23e8adeec4e4aeec8191839bf71a33d184540e58",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "laravel-admin-ext/media-manager": "^1.0",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\FileBrowser\\FileBrowserServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\FileBrowser\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dian Wang",
+                    "email": "dian126@foxmail.com"
+                }
+            ],
+            "description": "A file browser for laravel-admin",
+            "homepage": "https://github.com/laravel-admin-extensions/file-browser",
+            "keywords": [
+                "extension",
+                "laravel-admin"
+            ],
+            "time": "2018-11-07T06:54:52+00:00"
+        },
+        {
+            "name": "laravel-admin-ext/grid-lightbox",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/grid-lightbox.git",
+                "reference": "4f019afa0a568401a4de36a60946b6c077bf1a65"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/grid-lightbox/zipball/4f019afa0a568401a4de36a60946b6c077bf1a65",
+                "reference": "4f019afa0a568401a4de36a60946b6c077bf1a65",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\Grid\\Lightbox\\LightboxServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\Grid\\Lightbox\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "song",
+                    "email": "zosong@126.com"
+                }
+            ],
+            "description": "Turn your grid into a lightbox & gallery",
+            "homepage": "https://github.com/laravel-admin-ext/grid-lightbox",
+            "keywords": [
+                "extension",
+                "gallery",
+                "grid",
+                "laravel-admin",
+                "lightbox"
+            ],
+            "time": "2018-10-04T22:08:01+00:00"
+        },
+        {
             "name": "laravel-admin-ext/helpers",
             "version": "v1.1.1",
             "source": {
@@ -1367,6 +2424,167 @@
                 "laravel-admin"
             ],
             "time": "2018-10-24T15:21:11+00:00"
+        },
+        {
+            "name": "laravel-admin-ext/id-validator",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/id-validator.git",
+                "reference": "38d8a1e9f101c05a24b041c9c2c7674ce80388b9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/id-validator/zipball/38d8a1e9f101c05a24b041c9c2c7674ce80388b9",
+                "reference": "38d8a1e9f101c05a24b041c9c2c7674ce80388b9",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "jxlwqq/id-validator": "*",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\Admin\\IdValidator\\IdValidatorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\Admin\\IdValidator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "song",
+                    "email": "zosong@126.com"
+                }
+            ],
+            "description": "一个中国居民身份证校验工具",
+            "homepage": "https://github.com/laravel-admin-ext/id-validator",
+            "keywords": [
+                "extension",
+                "id-validator",
+                "laravel-admin"
+            ],
+            "time": "2018-11-05T15:17:46+00:00"
+        },
+        {
+            "name": "laravel-admin-ext/js-editor",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/js-editor.git",
+                "reference": "4657c3df82bc6ac7919ce7460d0a8ac37f04dd72"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/js-editor/zipball/4657c3df82bc6ac7919ce7460d0a8ac37f04dd72",
+                "reference": "4657c3df82bc6ac7919ce7460d0a8ac37f04dd72",
+                "shasum": ""
+            },
+            "require": {
+                "jxlwqq/code-mirror": "*",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\JsEditor\\JsEditorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\JsEditor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "song",
+                    "email": "zosong@126.com"
+                }
+            ],
+            "description": "Javascript editor extension for laravel-admin",
+            "homepage": "https://github.com/laravel-admin-ext/js-editor",
+            "keywords": [
+                "JS",
+                "code mirror",
+                "editor",
+                "extension",
+                "javascript",
+                "laravel-admin"
+            ],
+            "time": "2018-09-11T17:20:09+00:00"
+        },
+        {
+            "name": "laravel-admin-ext/lock-screen",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/lock-screen.git",
+                "reference": "847b40fe32c9248b18d60b015860c2530232097d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/lock-screen/zipball/847b40fe32c9248b18d60b015860c2530232097d",
+                "reference": "847b40fe32c9248b18d60b015860c2530232097d",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\Admin\\LockScreen\\LockScreenServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\Admin\\LockScreen\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "z-song"
+                }
+            ],
+            "description": "description...",
+            "homepage": "https://github.com/laravel-admin-ext/lock-screen",
+            "keywords": [
+                "extension",
+                "laravel-admin"
+            ],
+            "time": "2018-11-14T15:28:44+00:00"
         },
         {
             "name": "laravel-admin-ext/log-viewer",
@@ -1475,6 +2693,278 @@
                 "media"
             ],
             "time": "2018-09-23T06:02:37+00:00"
+        },
+        {
+            "name": "laravel-admin-ext/media-player",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/media-player.git",
+                "reference": "aff26fc13f8c2b127c4748df0c55cae845da783d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/media-player/zipball/aff26fc13f8c2b127c4748df0c55cae845da783d",
+                "reference": "aff26fc13f8c2b127c4748df0c55cae845da783d",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\Admin\\MediaPlayer\\MediaPlayerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\Admin\\MediaPlayer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "z-song",
+                    "email": "zosong@126.com"
+                }
+            ],
+            "description": "Intergrates mediaelement into laravel-admin",
+            "homepage": "https://github.com/laravel-admin-ext/media-player",
+            "keywords": [
+                "audio",
+                "extension",
+                "laravel-admin",
+                "player",
+                "video"
+            ],
+            "time": "2018-11-13T17:15:53+00:00"
+        },
+        {
+            "name": "laravel-admin-ext/messages",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/messages.git",
+                "reference": "5c4bafaa232b2e30595a9ea808715d47fd539fef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/messages/zipball/5c4bafaa232b2e30595a9ea808715d47fd539fef",
+                "reference": "5c4bafaa232b2e30595a9ea808715d47fd539fef",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.5",
+                "laravel/framework": "~5.5",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "laravel/laravel": "~5.5",
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\Admin\\Message\\MessageServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\Admin\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "z-song",
+                    "email": "zosong@126.com"
+                }
+            ],
+            "description": "Message extension for laravel-admin",
+            "homepage": "https://github.com/laravel-admin-extensions/messages",
+            "keywords": [
+                "laravel-admin",
+                "messages"
+            ],
+            "time": "2018-05-07T02:07:53+00:00"
+        },
+        {
+            "name": "laravel-admin-ext/php-editor",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/php-editor.git",
+                "reference": "8a41a929f24a5817db23efdc88d6acde39a19796"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/php-editor/zipball/8a41a929f24a5817db23efdc88d6acde39a19796",
+                "reference": "8a41a929f24a5817db23efdc88d6acde39a19796",
+                "shasum": ""
+            },
+            "require": {
+                "jxlwqq/code-mirror": "*",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\PHPEditor\\PHPEditorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\PHPEditor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "song",
+                    "email": "zosong@126.com"
+                }
+            ],
+            "description": "PHP editor extension for laravel-admin based on code-mirror",
+            "homepage": "https://github.com/laravel-admin-ext/php-editor",
+            "keywords": [
+                "code mirror",
+                "editor",
+                "extension",
+                "laravel-admin",
+                "php"
+            ],
+            "time": "2018-09-11T17:20:29+00:00"
+        },
+        {
+            "name": "laravel-admin-ext/phpinfo",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/phpinfo.git",
+                "reference": "4212753c00e800c2d74f2cae79bf79cb1fd626b2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/phpinfo/zipball/4212753c00e800c2d74f2cae79bf79cb1fd626b2",
+                "reference": "4212753c00e800c2d74f2cae79bf79cb1fd626b2",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\PHPInfo\\PHPInfoServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\PHPInfo\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "song",
+                    "email": "zosong@126.com"
+                }
+            ],
+            "description": "Show php information in laravel-admin",
+            "homepage": "https://github.com/laravel-admin-ext/phpinfo",
+            "keywords": [
+                "extension",
+                "laravel-admin",
+                "phpinfo"
+            ],
+            "time": "2018-09-09T09:38:15+00:00"
+        },
+        {
+            "name": "laravel-admin-ext/python-editor",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/python-editor.git",
+                "reference": "bd482560f5ae7b86b61899374e718f28bad47ab3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/python-editor/zipball/bd482560f5ae7b86b61899374e718f28bad47ab3",
+                "reference": "bd482560f5ae7b86b61899374e718f28bad47ab3",
+                "shasum": ""
+            },
+            "require": {
+                "jxlwqq/code-mirror": "*",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\PythonEditor\\PythonEditorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\PythonEditor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "song",
+                    "email": "zosong@126.com"
+                }
+            ],
+            "description": "Python editor extension for laravel-admin",
+            "homepage": "https://github.com/laravel-admin-ext/python-editor",
+            "keywords": [
+                "code mirror",
+                "editor",
+                "extension",
+                "laravel-admin",
+                "python"
+            ],
+            "time": "2018-09-11T17:20:54+00:00"
         },
         {
             "name": "laravel-admin-ext/redis-manager",
@@ -1641,6 +3131,219 @@
                 "task"
             ],
             "time": "2018-05-07T02:07:14+00:00"
+        },
+        {
+            "name": "laravel-admin-ext/simplemde",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/simplemde.git",
+                "reference": "a177887a8ebdad6711fa6c1e7370492e488e9cf9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/simplemde/zipball/a177887a8ebdad6711fa6c1e7370492e488e9cf9",
+                "reference": "a177887a8ebdad6711fa6c1e7370492e488e9cf9",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\Simplemde\\SimplemdeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\Simplemde\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "song",
+                    "email": "zosong@126.com"
+                }
+            ],
+            "description": "Simplemde markdown editor extension for laravel-admin",
+            "homepage": "https://github.com/laravel-admin-ext/simplemde",
+            "keywords": [
+                "editor",
+                "extension",
+                "laravel-admin",
+                "markdown"
+            ],
+            "time": "2018-09-09T09:42:13+00:00"
+        },
+        {
+            "name": "laravel-admin-ext/sparkline",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/sparkline.git",
+                "reference": "4a362f9cffeb768c593a2cebeeab6a443ab88c12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/sparkline/zipball/4a362f9cffeb768c593a2cebeeab6a443ab88c12",
+                "reference": "4a362f9cffeb768c593a2cebeeab6a443ab88c12",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\Admin\\Sparkline\\SparklineServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\Admin\\Sparkline\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "song",
+                    "email": "zosong@126.com"
+                }
+            ],
+            "description": "Integrates jQuery sparkline into laravel-admin",
+            "homepage": "https://github.com/laravel-admin-ext/sparkline",
+            "keywords": [
+                "extension",
+                "laravel-admin",
+                "sparkline"
+            ],
+            "time": "2018-09-25T17:12:32+00:00"
+        },
+        {
+            "name": "laravel-admin-ext/summernote",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/summernote.git",
+                "reference": "926b6cd492108f38ff747a267a511a7452e5641a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/summernote/zipball/926b6cd492108f38ff747a267a511a7452e5641a",
+                "reference": "926b6cd492108f38ff747a267a511a7452e5641a",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\Summernote\\SummernoteServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\Summernote\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "song",
+                    "email": "zsong@126.com"
+                }
+            ],
+            "description": "Summernote extension for laravel-admin",
+            "homepage": "https://github.com/laravel-admin-ext/summernote",
+            "keywords": [
+                "editor",
+                "extension",
+                "laravel-admin"
+            ],
+            "time": "2018-09-09T09:40:13+00:00"
+        },
+        {
+            "name": "laravel-admin-ext/wang-editor",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/wangEditor.git",
+                "reference": "16d7a1eb42e90740c6f30918569088c772157365"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/wangEditor/zipball/16d7a1eb42e90740c6f30918569088c772157365",
+                "reference": "16d7a1eb42e90740c6f30918569088c772157365",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\WangEditor\\WangEditorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\WangEditor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "song",
+                    "email": "zosong@126.com"
+                }
+            ],
+            "description": "wangEditor extension for laravel-admin",
+            "homepage": "https://github.com/laravel-admin-extensions/wangEditor",
+            "keywords": [
+                "editor",
+                "extension",
+                "laravel-admin"
+            ],
+            "time": "2018-11-30T03:12:58+00:00"
         },
         {
             "name": "laravel/framework",
@@ -2773,6 +4476,52 @@
             "time": "2018-10-02T13:36:53+00:00"
         },
         {
+            "name": "overtrue/laravel-ueditor",
+            "version": "1.2.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/overtrue/laravel-ueditor.git",
+                "reference": "ac7e860778d66f00f7f47990ee4ad827e78b45ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/overtrue/laravel-ueditor/zipball/ac7e860778d66f00f7f47990ee4ad827e78b45ef",
+                "reference": "ac7e860778d66f00f7f47990ee4ad827e78b45ef",
+                "shasum": ""
+            },
+            "require-dev": {
+                "fabpot/php-cs-fixer": "^1.10"
+            },
+            "suggest": {
+                "overtrue/laravel-filesystem-qiniu": "如果你想要使用七牛云存储，也许你需要安装它哦~"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Overtrue\\LaravelUEditor\\UEditorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Overtrue\\LaravelUEditor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "overtrue",
+                    "email": "anzhengchao@gmail.com"
+                }
+            ],
+            "description": "UEditor integration for Laravel.",
+            "time": "2017-09-24T02:23:11+00:00"
+        },
+        {
             "name": "paragonie/constant_time_encoding",
             "version": "v2.2.2",
             "source": {
@@ -2878,6 +4627,59 @@
                 "random"
             ],
             "time": "2018-07-02T15:55:56+00:00"
+        },
+        {
+            "name": "peinhu/aetherupload-laravel",
+            "version": "v1.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/peinhu/AetherUpload-Laravel.git",
+                "reference": "5bd6a076d8c892b15984e04c36af718dc48d1873"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/peinhu/AetherUpload-Laravel/zipball/5bd6a076d8c892b15984e04c36af718dc48d1873",
+                "reference": "5bd6a076d8c892b15984e04c36af718dc48d1873",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "suggest": {
+                "predis/predis": "Needed to support instant completion"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AetherUpload\\AetherUploadServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AetherUpload\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Payne Hu",
+                    "email": "huyang110yahoo@gmail.com",
+                    "homepage": "http://www.2ndrenais.com",
+                    "role": "Manager"
+                }
+            ],
+            "description": "Upload large files for Laravel 上传 大文件 laravel包",
+            "keywords": [
+                "big",
+                "large",
+                "大文件"
+            ],
+            "time": "2017-12-14T08:05:03+00:00"
         },
         {
             "name": "php-http/guzzle6-adapter",
@@ -7217,7 +9019,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "laravel-admin-ext/messages": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

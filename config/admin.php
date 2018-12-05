@@ -52,7 +52,7 @@ return [
 
         'namespace' => 'App\\Admin\\Controllers',
 
-        'middleware' => ['web', 'admin'],
+        'middleware' => ['web', 'admin', 'admin.lock'],
     ],
 
     /*
@@ -329,6 +329,241 @@ return [
             'user_retriever' => function ($id) {
                 return \App\User::find($id);
             },
-        ]
+        ],
+        'wang-editor' => [
+            // 如果要关掉这个扩展，设置为false
+            'enable' => true,
+            // 编辑器的配置
+            'config' => [
+                'uploadImgServer' => '/upload',
+            ]
+        ],
+        'quill' => [
+            // If the value is set to false, this extension will be disabled
+            'enable' => true,
+            'config' => [
+                'modules' => [
+                    'syntax' => true,
+                    'toolbar' =>
+                        [
+                            ['size' => []],
+                            ['header' => []],
+                            'bold',
+                            'italic',
+                            'underline',
+                            'strike',
+                            ['script' => 'super'],
+                            ['script' => 'sub'],
+                            ['color' => []],
+                            ['background' => []],
+                            'blockquote',
+                            'code-block',
+                            ['list' => 'ordered'],
+                            ['list' => 'bullet'],
+                            ['indent' => '-1'],
+                            ['indent' => '+1'],
+                            'direction',
+                            ['align' => []],
+                            'link',
+                            'image',
+                            'video',
+                            'formula',
+                            'clean'
+                        ],
+                ],
+                'theme' => 'snow',
+                'height' => '200px',
+            ]
+        ],
+        'china-distpicker' => [
+            // 如果要关掉这个扩展，设置为false
+            'enable' => true,
+        ],
+        'simplemde' => [
+            // Set to false if you want to disable this extension
+            'enable' => true,
+            // If you want to set an alias for the calling method
+            //'alias' => 'markdown',
+            // Editor configuration
+            'config' => [
+                'autofocus'   => true,
+                'placeholder' => '    ',
+            ]
+        ],
+        'media-manager' => [
+            // Select a local disk that you configured in `config/filesystem.php`
+            'disk' => 'public'
+        ],
+        'ckeditor' => [
+
+            //Set to false if you want to disable this extension
+            'enable' => true,
+
+            // Editor configuration
+            'config' => [
+                'lang'   => 'zh-CN',
+                'height' => 500,
+            ]
+        ],
+        'material-ui' => [
+            // If the value is set to false, this extension will be disabled
+            'enable' => true
+        ],
+        'ueditor' => [
+
+            // 如果要关掉这个扩展，设置为false
+            'enable' => true,
+
+            // 编辑器的前端配置 参考：http://fex.baidu.com/ueditor/#start-config
+            'config' => [
+                'initialFrameHeight' => 400, // 例如初始化高度
+            ]
+        ],
+        'env-manager' => [
+            // If the value is set to false, this extension will be disabled
+            'enable' => true
+        ],
+        'json-editor' => [
+            // set to false if you want to disable this extension
+            'enable' => true,
+            'config' =>
+                [
+                    'mode' => 'tree',
+                    'modes' => ['code', 'form', 'text', 'tree', 'view'], // allowed modes
+                ],
+        ],
+        'simditor' => [
+            // Set to false if you want to disable this extension
+            'enable' => true,
+            // Editor configuration
+            'config' => [
+                'upload' => [
+                    'url' => '/admin/api/upload', # example api route: admin/api/upload
+                    'fileKey' => 'upload_file',
+                    'connectionCount' => 3,
+                    'leaveConfirm' => 'Uploading is in progress, are you sure to leave this page?'
+                ],
+                'tabIndent' => true,
+                'toolbar' => ['title', 'bold', 'italic', 'underline', 'strikethrough', 'fontScale', 'color', '|', 'ol', 'ul', 'blockquote', 'code', 'table', '|', 'link', 'image', 'hr', '|', 'indent', 'outdent', 'alignment'],
+                'toolbarFloat' => true,
+                'toolbarFloatOffset' => 0,
+                'toolbarHidden' => false,
+                'pasteImage' => true,
+                'cleanPaste' => false,
+            ]
+        ],
+        'star-rating' => [
+
+            // set to false if you want to disable this extension
+            'enable' => true,
+
+            // configuration
+            'config' => [
+                'min' => 1, 'max' => 5, 'step' => 1, 'size' => 'xs'
+            ]
+        ],
+        'phpinfo' => [
+
+            // Set this to false if you want to disable this extension
+            'enable' => true,
+
+            // What information to show，see http://php.net/manual/en/function.phpinfo.php#refsect1-function.phpinfo-parameters
+            'what' => INFO_ALL,
+
+            // Set access path，defaults to `phpinfo`
+            //'path' => '~phpinfo',
+        ],
+        'cropper' => [
+
+            // 如果要关掉这个扩展，设置为false
+            'enable' => true,
+        ],
+        'grid-lightbox' => [
+
+            // Set to `false` if you want to disable this extension
+            'enable' => true,
+        ],
+        'sparkline' => [
+
+            // Set to `false` if you want to disable this extension
+            'enable' => true,
+        ],
+        'python-editor' => [
+
+            //Set to false if you want to disable this extension
+            'enable' => true,
+
+            // Editor configuration
+            'config' => [
+
+            ]
+        ],
+        'php-editor' => [
+
+            //Set to false if you want to disable this extension
+            'enable' => true,
+
+            // Editor configuration
+            'config' => [
+
+            ]
+        ],
+        'js-editor' => [
+
+            // Set to false if you want to disable this extension
+            'enable' => true,
+
+            // Editor configuration
+            'config' => [
+
+            ]
+        ],
+        'css-editor' => [
+
+            // set to false if you want to disable this exteions
+            'enable' => true,
+
+            // editor configuration
+            'config' => [
+
+            ]
+        ],
+        'summernote' => [
+
+            //Set to false if you want to disable this extension
+            'enable' => true,
+
+            // Editor configuration
+            'config' => [
+                'lang'   => 'zh-CN',
+                'height' => 500,
+            ]
+        ],
+        'chartjs' => [
+
+            // Set to `false` if you want to disable this extension
+            'enable' => true,
+        ],
+        'daterangepicker' => [
+
+            // Set to `false` if you want to disable this extension
+            'enable' => true,
+
+            // Find more configurations http://www.daterangepicker.com/
+            'config' => [
+
+            ]
+        ],
+        'clike-editor' => [
+
+            // 如果要关掉这个扩展，设置为false
+            'enable' => true,
+
+            // 编辑器的配置
+            'config' => [
+
+            ]
+        ],
+
     ],
 ];

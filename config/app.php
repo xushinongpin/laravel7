@@ -78,7 +78,7 @@ return [
     |
     */
 
-    'locale' => 'cn',
+    'locale' => 'en',
 
     /*
     |--------------------------------------------------------------------------
@@ -91,7 +91,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'cn',
+    'fallback_locale' => 'en',
 
     /*
     |--------------------------------------------------------------------------
@@ -159,6 +159,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
+        Overtrue\LaravelUEditor\UEditorServiceProvider::class,
 
     ],
 
