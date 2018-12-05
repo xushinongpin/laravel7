@@ -18,6 +18,8 @@
     bbid   所有下级id
     money  账户余额
     integral  积分
+    domain   个人域名
+    recommend  推荐商品【 存储商品id（多个都好隔开），如果不存在推荐的商品id则根据默认规则推荐 】
 
 收款类型
     id  自增id
@@ -109,3 +111,11 @@
     id  自增id
     name  物流
     price  物流价格【价格规则可以用json存储】
+
+
+域名绑定表
+    domain   域名
+    title    标题
+    keyword  关键词【多个用逗号隔开】
+    description  描述
+    uid      对应用户id 【 默认打开全部域名 】
