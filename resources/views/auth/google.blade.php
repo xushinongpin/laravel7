@@ -72,7 +72,7 @@
     </div>
     <div class="visible-print text-center">
         {!! QrCode::size(200)->generate($qrCodeStr); !!}
-        <p>-|谷歌验证码</p>
+        <p>-|谷歌验证码： {!! $google_key !!}</p>
     </div>
 </div>
 </body>
