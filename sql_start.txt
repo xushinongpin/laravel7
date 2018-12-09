@@ -28,14 +28,23 @@
     id    自增id
     uid      对应用户id 【 默认打开全部域名 】
     domain   域名
+    status   域名状态 【1启用 2禁用 3申请审核中】
     title    标题
     keyword  关键词【多个用逗号隔开】
     description  描述
-    bulletin     公告
     supports     活动【 数组 】
     avatar       商家主头像
     pics         商家实景图片 【 数组，多个逗号隔开 】
     infos        商家信息 【 数组，多个逗号隔开 】
+    template    调用的模版【 配置多个网站前端模版，可提供给他们自己选择合适的使用 】
+
+公告
+    id 自增id
+    uid 用户id
+    status  状态【 1启用 2禁用 3删除】
+    title 公告标题
+    desc  公告内容
+    sort  排序 【 越大排越前 】
 
 
 商家月统计
