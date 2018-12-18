@@ -7,8 +7,10 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
+    {{--<title>{{ config('app.name', 'Laravel') }}</title>--}}
+    <title>@yield('title','qwe')</title>
+    <meta name="description" content="@yield('description','Laravel - The PHP framework for web artisans.')">
+    <meta name="keywords" content="@yield('keywords','laravel, php, framework, web, artisans, taylor otwell')">
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 

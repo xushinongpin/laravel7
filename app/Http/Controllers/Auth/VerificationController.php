@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Foundation\Auth\VerifiesEmails;
+//vendor/laravel/framework/src/Illuminate/Routing/Router.php:1147
 
 class VerificationController extends Controller
 {

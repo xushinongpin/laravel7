@@ -8,11 +8,13 @@ use Encore\Admin\Layout\Column;
 use Encore\Admin\Layout\Content;
 use Encore\Admin\Layout\Row;
 use Encore\Admin\Widgets\Box;
+use App\User;
 
 class HomeController extends Controller
 {
     public function index(Content $content)
     {
+//        dd(User::all());
 //        return $content
 //            ->header('jQuery sparkline')
 //            ->body(new Box('Bar chart', view('admin.sparkline.bar')));

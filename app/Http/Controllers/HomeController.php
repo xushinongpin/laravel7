@@ -25,16 +25,16 @@ class HomeController extends Controller
     public function index()
     {
 //        Auth::logout();
-        $user = Auth::user();
-        $id = Auth::id();
-        $guard_name = Auth::guard();
-        dump($user);
-        dump(Auth::loginUsingId(1));
-        dump($user['email']);
-        dump($id);
-        dump($guard_name);
-        dump(Auth::check());
-        dump(Auth::viaRemember());
+//        $user = Auth::user();
+//        $id = Auth::id();
+//        $guard_name = Auth::guard();
+//        dump($user);
+//        dump(Auth::loginUsingId(1));
+//        dump($user['email']);
+//        dump($id);
+//        dump($guard_name);
+//        dump(Auth::check());
+//        dump(Auth::viaRemember());
         return view('home');
     }
 }

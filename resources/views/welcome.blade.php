@@ -80,7 +80,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Laravel {{ $foo  }} {{ $script  }} {!! $script !!}
                 </div>
 
                 <div class="links">
@@ -90,6 +90,10 @@
                     <a href="https://nova.laravel.com">Nova</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
+
+                    @foreach($tasks as $task)
+                        <a href="#">{{ $task  }}</a>
+                    @endforeach
                 </div>
             </div>
         </div>
